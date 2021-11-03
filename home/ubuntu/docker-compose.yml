@@ -1,0 +1,29 @@
+version: '2.2'
+services:
+    server:
+        build: ./flask
+        ports:
+         - "80:5000"
+        volumes:
+         - ./flask:/app
+        environment:
+         FLASK_ENV: development
+    web:
+        build: ./client/my-app
+        ports:
+         - "3000:3000"
+        volumes:
+         - ./client/my-app:/usr/src/app
+        depends_on:
+         - server
+           #proxy:
+           #image: ngnix:latest
+           #restart: unless-stopped
+           #ports:
+           #- '8000:80'
+           #volumes:
+           #- ./proxy/default.conf:/etc/ngnix/conf.d/default.conf
+        
+
+
+
