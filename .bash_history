@@ -454,3 +454,62 @@ ls
 cd src/
 ls
 vi App.js
+ls
+docker images
+docker ps -a
+docker-compose up
+docker ps-a
+docker ps -a
+docker push ubuntu_web
+docker login
+docker push ubuntu_web
+sudo docker push ubuntu_web
+sudo docker login
+sudo docker push ubuntu_web
+docker login -u "sujin451" -p "Sujin@12345" docker.io
+docker push sujin451/ubuntu_web
+docker push ubuntu_web
+docker tag ubuntu_web:react new-repo:react
+docker tag ubuntu_web new-repo:react
+docker images
+docker push new-repo:react
+docker push sujin451/react:latest
+docker push 3d2831826af4:latest
+docker push 3d2831826af4
+docker push 3d2831826af4/react
+docker push react/3d2831826af4
+docker push react
+docker push sujin451/new-repo:react
+docker push new-repo:react
+docker login
+ls
+docker push 
+kubectl create namespace Sujin
+kubectl
+ls
+git login
+git init -b Development
+git init -b main
+ls
+cd /usr/local
+ls
+cd /bin
+ls
+cd git
+ls git
+pwd
+cd git
+cd ..
+sudo apt-get git
+sudo apt-get install git
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Sujin451/RedAcre.git
+sudo su 
+exit
+ls
+docker-compose down
+exit
+ls
