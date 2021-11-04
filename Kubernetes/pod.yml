@@ -1,3 +1,5 @@
+## NO usuage of this file as i have directly created deployments ##
+##However this way we can procure pods/containers as well, just kept this file for reference
 apiVersion: v1
 kind: Pod
 metadata:
