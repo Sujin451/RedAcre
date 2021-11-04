@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-deployment
+  labels:
+    app: react
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: react
+  template:
+    metadata:
+      labels:
+        app: react
+    spec:
+      containers:
+      - name: react-sys-stats
+        image: sujin451/react:updated
+        ports:
+        - containerPort: 3000
+      - name: flask-sys-stats
+        image: sujin451/flask:updated
+        ports:
+        - containerPort: 8000
+

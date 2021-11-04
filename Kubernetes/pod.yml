@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: POD1
+  labels:
+    name: React
+spec:
+    containers:
+      - name: React_Frontend
+        image: sujin451/react:updated
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 3000
+      - name: Flask_Backend
+        image: sujin451/flask:updated
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 8000
+
