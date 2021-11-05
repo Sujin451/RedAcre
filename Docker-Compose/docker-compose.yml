@@ -1,3 +1,6 @@
+#This dokcer compose file spins up both flask backend & react frontend apps together 
+#Author - Sujin Nihar
+#Date: 1st November 2021
 version: '2.2'
 services:
     server:
@@ -16,13 +19,6 @@ services:
          - ./client/my-app:/usr/src/app
         depends_on:
          - server
-           #proxy:
-           #image: ngnix:latest
-           #restart: unless-stopped
-           #ports:
-           #- '8000:80'
-           #volumes:
-           #- ./proxy/default.conf:/etc/ngnix/conf.d/default.conf
         
 
 
